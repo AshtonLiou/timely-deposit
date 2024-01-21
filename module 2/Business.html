@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business.html</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <svg class="fixedBottom" height="400" width="650">
+        <polygon points="0,0 0,400 650,400 100,300" style="fill:#32465a;"></polygon>
+    </svg>
+    <svg class="fixedTop" height="400" width="650">
+        <polygon points="0,0 650,0 650,400 550,100" style="fill:#32465a;"></polygon>
+    </svg>
+
+    <!-- navbar -->
+
+    <nav class="container">
+        <a href="home.html">Home</a>
+        <a href="news.html">News</a>
+        <img src="./img/FIBEX_logo.png" style="height: 4vh; margin: 2vh 2vw; transform: scale(2);" alt="logo">
+        <a href="Business.html" style="color: #000;">Business</a>
+        <a href="tickets.html">Tickets</a>
+    </nav>
+
+    <!-- collapse -->
+
+    <main class="loadSlide container mt-3" style="width: 40vw;">
+
+        <div class="card p-0 perspectiveRight bg-dark">
+            <img src="./img/Carousel1.jpg" alt="" style="width: 100%; height: 40vh; border-radius: 30px 5px">
+            <div class="p-2 w-50 cardBackground" style="position: absolute; top: 40%; left: 45%; border-radius: 6px;">
+                <h2 style="font-weight: 800;">設計展資訊區</h2>
+                <div style="font-weight: 600;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                    suscipit iusto
+                    sint sapiente itaquepraesentium voluptatibus distinctio quidem animi, minima odio sequi. Dolorem
+                    enim, eius
+                    eligendinecessitatibus maiores quasi minus!
+                </div>
+            </div>
+        </div>
+
+        <div class="p-0 card perspectiveLeft bg-dark mt-3">
+            <div class="p-2 w-50 cardBackground" style="position: absolute; top: 5%; left: 10%; border-radius: 6px;">
+                <h2 style="font-weight: 800;">作品介紹區</h2>
+                <div style="font-weight: 600;"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. At rem
+                    assumenda
+                    libero perferendis, saepeexercitationem dicta odit ex tempore velit fuga quas molestiae aliquam
+                    earum
+                    obcaecati natus rationereprehenderit modi.
+                </div>
+                <div id="readMore" style="font-weight: 600; display: none;">Lorem elit. Deserunt quasi, ullam qui iusto
+                    nulla aspernatur?Aliquam, eos. Nisi beatae quam in, error amet voluptatum obcaecati dolor facilis
+                    molestiae nulla explicabo.
+                </div>
+                <button class="btn m-2">Read More</button>
+            </div>
+            <img src="./img/Carousel2.jpg" alt="" style="width: 100%; height: 40vh; border-radius: 30px 5px">
+        </div>
+
+    </main>
+
+    <!-- footer -->
+
+    <img src="./img/facebook.png" style="height: 40px; left: 1px;" class="fixed-bottom" alt="facebook">
+    <img src="./img/google.png" style="height: 40px; left: 42px;" class="fixed-bottom" alt="google">
+    <footer class="fixed-bottom text-center text-white">Copyright &copy; 2024 FIBEX All Rights Reserved
+    </footer>
+
+    <!-- src -->
+
+    <script src="./jquery/jquery.js"></script>
+    <script src="./bootstrap/bootstrap.js"></script>
+    <script src="./randomBgc.js"></script>
+
+    <script>
+
+        $('.btn').click(() => {
+            $("#readMore").slideToggle(500);
+            $(".btn").text() == "Read More" ? $(".btn").text("Read Less") : $(".btn").text("Read More");
+        })
+
+    </script>
+
+</body>
+
+</html>

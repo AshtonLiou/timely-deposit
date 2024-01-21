@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news.html</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <svg class="fixedBottom" height="400" width="650">
+        <polygon points="0,0 0,400 650,400 100,300" style="fill:#32465a;"></polygon>
+    </svg>
+    <svg class="fixedTop" height="400" width="650">
+        <polygon points="0,0 650,0 650,400 550,100" style="fill:#32465a;"></polygon>
+    </svg>
+
+    <!-- navbar -->
+
+    <nav class="container">
+        <a href="home.html">Home</a>
+        <a href="news.html" style="color: #000;">News</a>
+        <img src="./img/FIBEX_logo.png" style="height: 4vh; margin: 2vh 2vw; transform: scale(2);" alt="logo">
+        <a href="Business.html">Business</a>
+        <a href="tickets.html">Tickets</a>
+    </nav>
+
+    <!-- map -->
+
+    <main class="container-fluid mapContainer loadSlide">
+        <div class="row m-0">
+            <div class="col d-flex p-0">
+                <img src="./img/Map.jpg" alt="Map" class="w-50 border-right border-dark">
+                <img id="mapImg" src="./img/News1.jpg" alt="mapImg" class="w-50 border-left border-dark">
+                <div class="cardBackground w-50 p-4"
+                    style="position: absolute; bottom: 0; right: 0; border-radius: 50px 0 0 0;">
+                    <h2 id="mapTitle" style="font-weight: 800;">title1</h2>
+                    <P id="mapParagraph" style="font-weight: 600;">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Vel in nobis dolore quia corrupti, possimus corporis, facilis quasi vero culpa natus
+                        deleniti voluptate iure sequi nihil! Ex sint velit autem.</P>
+                </div>
+            </div>
+            <div class="mapIcon" id="icon1"></div>
+            <div class="mapIcon" id="icon2"></div>
+            <div class="mapIcon" id="icon3"></div>
+            <div class="mapIcon" id="icon4"></div>
+            <div class="mapIcon" id="icon5"></div>
+        </div>
+    </main>
+
+    <!-- footer -->
+
+    <img src="./img/facebook.png" style="height: 40px; left: 1px;" class="fixed-bottom" alt="facebook">
+    <img src="./img/google.png" style="height: 40px; left: 42px;" class="fixed-bottom" alt="google">
+    <footer class="fixed-bottom text-center text-white">Copyright &copy; 2024 FIBEX All Rights Reserved
+    </footer>
+
+    <!-- src -->
+
+    <script src="./jquery/jquery.js"></script>
+    <script src="./bootstrap/bootstrap.js"></script>
+    <script src="./news.js"></script>
+    <script src="./randomBgc.js"></script>
+
+</body>
+
+</html>

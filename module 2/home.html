@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home.html</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <svg class="fixedBottom" height="400" width="650">
+        <polygon points="0,0 0,400 650,400 100,300" style="fill:#32465a;"></polygon>
+    </svg>
+    <svg class="fixedTop" height="400" width="650">
+        <polygon points="0,0 650,0 650,400 550,100" style="fill:#32465a;"></polygon>
+    </svg>
+
+    <!-- navbar -->
+
+    <nav class="container">
+        <a href="home.html" style="color: #000;">Home</a>
+        <a href="news.html">News</a>
+        <img src="./img/FIBEX_logo.png" style="height: 4vh; margin: 2vh 2vw; transform: scale(2);" alt="logo">
+        <a href="Business.html">Business</a>
+        <a href="tickets.html">Tickets</a>
+    </nav>
+
+    <!-- imformation-->
+
+    <section class="container text-center loadSlide mt-4"
+        style="color: #32465a; font-weight: 700; width: 25vw;">
+        <h1 class="display-1" style="font-weight: 900; color: #32465a; border-style: solid hidden;">活動資訊
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ullam ex quo magni
+            doloremque facere eos maiores placeat aperiam fugit cum aliquam sunt quos, quidem dolorum! Quibusdam aliquid
+            deserunt hic?</p>
+    </section>
+
+    <!-- carousel -->
+
+    <main class="loadSlide">
+        <div id="Slider" class="slide carousel m-auto" data-ride="carousel"
+            style="width: 50vw; height: 50vh; border: 2px solid #333; box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .7);">
+            <ol class="carousel-indicators">
+                <li data-target="#Slider" data-slide-to="0" class="active"></li>
+                <li data-target="#Slider" data-slide-to="1"></li>
+                <li data-target="#Slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner h-100">
+
+                <div class="carousel-item h-100 active" data-interval="2000">
+                    <img src="./img/Carousel1.jpg" class="w-100 h-100" alt="Carousel1">
+                    <div class="carousel-caption cardBackground w-100" style="position: absolute; bottom: 0; left: 0;">
+                        <h2 style="font-weight: 800;">title1</h2>
+                        <P style="font-weight: 600;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Excepturi, numquam porro. Adipisci, aliquid laudantium veniam laboriosam, mollitia voluptate
+                            minima odio, et inventore ducimus iusto sunt modi magnam dolorem id? Magni?</P>
+                    </div>
+                </div>
+
+                <div class="carousel-item h-100" data-interval="2000">
+                    <img src="./img/Carousel2.jpg" class="w-100 h-100" alt="Carousel2">
+                    <div class="carousel-caption cardBackground w-100" style="position: absolute; bottom: 0; left: 0;">
+                        <h2 style="font-weight: 800;">title2</h2>
+                        <P style="font-weight: 600;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Voluptatem rerum qui incidunt quasi debitis reiciendis, magni harum quam possimus sequi,
+                            quidem doloremque suscipit illum culpa architecto repellat nam ut laudantium.</P>
+                    </div>
+                </div>
+
+                <div class="carousel-item h-100" data-interval="2000">
+                    <img src="./img/Carousel3.jpg" class="w-100 h-100" alt="Carousel3">
+                    <div class="carousel-caption cardBackground w-100" style="position: absolute; bottom: 0; left: 0;">
+                        <h2 style="font-weight: 800;">title3</h2>
+                        <P style="font-weight: 600;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
+                            temporibus molestiae eum facere repellendus atque iste maiores expedita possimus. Excepturi
+                            eum molestias quia optio magni. Laborum libero vel voluptate pariatur!</P>
+                    </div>
+                </div>
+            </div>
+
+            <!-- arrow -->
+
+            <button class="carousel-control-prev" data-target="#Slider" data-slide="prev"
+                style="background-color: #000; width: 70px; height: 70px; margin: auto 1em; border-radius: 50%;">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-target="#Slider" data-slide="next"
+                style="background-color: #000; width: 70px; height: 70px; margin: auto 1em; border-radius: 50%;">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+    </main>
+
+    <!-- footer -->
+
+    <img src="./img/facebook.png" style="height: 40px; left: 1px;" class="fixed-bottom" alt="facebook">
+    <img src="./img/google.png" style="height: 40px; left: 42px;" class="fixed-bottom" alt="google">
+    <footer class="fixed-bottom text-center text-white">Copyright &copy; 2024 FIBEX All Rights Reserved
+    </footer>
+
+    <!-- scr -->
+
+    <script src="./jquery/jquery.js"></script>
+    <script src="./bootstrap/bootstrap.js"></script>
+    <script src="./randomBgc.js"></script>
+
+</body>
+
+</html>

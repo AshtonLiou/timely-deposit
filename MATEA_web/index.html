@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home.html</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav class="container">
+        <a href="index.html" style="color: #c7b362;">Home</a>
+        <img src="../MATEA_logo/MATEA_logo1.png" style="height: 4vh; margin: 2vh 2vw; transform: scale(2.5);"
+            alt="logo">
+        <a href="https://www.facebook.com/">Facebook</a>
+    </nav>
+
+    <div class="container-fluid p-0 text-center">
+        <img src="./img/fff.jpg" alt="bgi" class="card-img loadSlide" style="height: 50vh; filter: blur(3px);">
+        <h1 class="card-title card-img-overlay display-1 loadSlide"
+            style="color: #fc0; margin-top: 35vh; font-weight: 900;">MATEA</h1>
+    </div>
+
+    <!-- main -->
+
+    <main class="container">
+
+        <!-- display logo -->
+
+        <div id="Slider" class="carousel mx-auto row loadSlide" data-ride="carousel"
+            style="width: 50vw; height: 40vh; margin-top: 20vh; backdrop-filter: invert(80%); border-radius: 200px; box-shadow: inset 0 0 10px 10px rgba(255, 255, 255, .4);">
+            <ol class="carousel-indicators">
+                <li data-target="#Slider" data-slide-to="0" class="active"></li>
+                <li data-target="#Slider" data-slide-to="1"></li>
+                <li data-target="#Slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner p-3">
+
+                <div class="carousel-item text-center active" data-interval="2000">
+                    <img src="../MATEA_logo/MATEA_logo1.png" style="height: 35vh;" alt="logo1">
+                </div>
+
+                <div class="carousel-item text-center" data-interval="2000">
+                    <img src="../MATEA_logo/MATEA_logo2.png" style="height: 35vh;" alt="logo2">
+                </div>
+
+                <div class="carousel-item text-center" data-interval="2000">
+                    <img src="../MATEA_logo/MATEA_logo3.png" style="height: 35vh;" alt="logo3">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" data-target="#Slider" data-slide="prev"
+                style="background-color: #808080; width: 70px; height: 70px; margin: auto 5px; border: 0; border-radius: 50%;">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-target="#Slider" data-slide="next"
+                style="background-color: #808080; width: 70px; height: 70px; margin: auto 5px; border: 0; border-radius: 50%;">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- busniess card -->
+
+        <div class="loadSlide container" style="width: 40vw; margin-top: 20vh;">
+            <div class="card p-0 perspectiveRight bg-dark">
+                <img src="../MATEA_businessCard/MATEA_businessCard(front).png" alt="busniessCard(front)"
+                    style="box-shadow: 0 0 10px 10px rgba(255, 255, 255, .4);">
+            </div>
+            <div class="card p-0 perspectiveLeft bg-dark mt-4">
+                <img src="../MATEA_businessCard/MATEA_businessCard(back).png" alt="busniessCard(back)"
+                    style="box-shadow: 0 0 10px 10px rgba(255, 255, 255, .4);">
+            </div>
+        </div>
+
+        <!-- clothing & mug -->
+
+        <div class="row loadSlide" style="margin-top: 20vh;">
+            <div class="card col-5 mx-auto bg-secondary text-center p-4 hoverZoomIn">
+                <img src="../MATEA_clothing/MATEA_clothing.png" class="card-img" alt="clothing"
+                    style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, .7)); z-index: 200;">
+                <h1 class="card-title display-3" style="color: #fc0; font-weight: 900; z-index: 200;">
+                    CLOTHING</h1>
+                <svg height="100%" width="100%" viewBox="0 0 100 100"
+                    style="position: absolute; bottom: 0; left: 0; z-index: 100;">
+                    <polygon points="0,0 100,60 100,100 0,100" style="fill:#32465a;"></polygon>
+                </svg>
+            </div>
+            <div class="card col-5 mx-auto bg-secondary text-center p-4 hoverZoomIn">
+                <img src="../MATEA_mug/MATEA_mug.png" class="card-img" alt="mug"
+                    style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, .7)); z-index: 200;">
+                <h1 class="card-title display-3" style="color: #fc0; font-weight: 900; z-index: 200;">
+                    MUG</h1>
+                <svg height="100%" width="100%" viewBox="0 0 100 100"
+                    style="position: absolute; bottom: 0; left: 0; z-index: 100;">
+                    <polygon points="0,0 100,60 100,100 0,100" style="fill:#32465a;"></polygon>
+                </svg>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- section -->
+
+    <section class="description p-3 text-center">
+        <h2 class="display-1" style="color: #fc0; font-weight: 900;">MATEA 之品牌設計</h2>
+        <div style="font-size: 40px; font-weight: 400; line-height: 2rem;">
+            <p>張貼者 : Lin Yu-Jin</p>
+            <p>Post date : 2019/06/05</p>
+            <p>Timestamp : PM-12:28</p>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <img src="./img/facebook.png" style="height: 40px; left: 1px;" class="fixed-bottom" alt="facebook">
+    <img src="./img/google.png" style="height: 40px; left: 42px;" class="fixed-bottom" alt="google">
+    <footer class="fixed-bottom text-center text-white">Copyright &copy; 2015 MATEA. All rights reserved
+    </footer>
+    <button id="scrollTop">T</button>
+
+    <!-- scr -->
+
+
+    <script src="./jquery/jquery.js"></script>
+    <script src="./bootstrap/bootstrap.js"></script>
+    <script src="./randomBgc.js"></script>
+
+    <script>
+        $("#scrollTop").click(() => {
+            $("html,body").animate({ scrollTop: 0 }, 1000);
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tickets.html</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <svg class="fixedBottom" height="400" width="650">
+        <polygon points="0,0 0,400 650,400 100,300" style="fill:#32465a;"></polygon>
+    </svg>
+    <svg class="fixedTop" height="400" width="650">
+        <polygon points="0,0 650,0 650,400 550,100" style="fill:#32465a;"></polygon>
+    </svg>
+
+    <!-- navbar -->
+
+    <nav class="container">
+        <a href="home.html">Home</a>
+        <a href="news.html">News</a>
+        <img src="./img/FIBEX_logo.png" style="height: 4vh; margin: 2vh 2vw; transform: scale(2);" alt="logo">
+        <a href="Business.html">Business</a>
+        <a href="tickets.html" style="color: #000;">Tickets</a>
+    </nav>
+
+    <!-- ticketfrom -->
+
+    <main class="container loadSlide mt-5" style=" width: 50vw;">
+        <form action="tickets.php" method="post" class="ticketform">
+            <h1 class="text-center">LOGIN</h1>
+            <div class="row mt-4">
+                <input type="text" class="input col-5" name="firstname" placeholder="First name (名字)" required>
+                <input type="text" class="input col-5 ml-auto" name="lastname" placeholder="Last name (姓氏)" required>
+            </div>
+            <div class="row mt-4">
+                <input type="text" class="input col" name="phone" placeholder="Phone (手機號碼)" required>
+            </div>
+            <div class="row mt-4">
+                <input type="password" class="input col" name="password" placeholder="Password (會員密碼)" required>
+            </div>
+            <div class="row mt-4 align-items-center">
+                <input id="verification" type="text" class="input col-6" name="verification"
+                    placeholder="Verification (數字驗證)" required>
+                <span id="captcha" class="col-2 text-center align-items-center mx-auto"
+                    style="font-size: 40px; font-family: Papyrus; user-select: none; background-color: rgba(255, 255, 255, 0.2); border-radius: 10px; box-shadow: inset 5px 5px 10px 5px rgba(0, 0, 0, 0.2);"></span>
+                <button type="button" class="btn col-3" onclick="reGenerate()"
+                    style="height: 5vh; font-weight: 700;">refresh (重刷驗證碼)</button>
+            </div>
+            <div class="row mt-4">
+                <button type="reset" class="btn col" style="height: 5vh; font-weight: 700;">reset (重製表單)</button>
+            </div>
+            <div class="row mt-4">
+                <button type="button" class="btn col" style="height: 5vh; font-size: 25px; font-weight: 900;"
+                    onclick="formSubmit()">Submit (送出按鈕)</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- footer -->
+
+    <img src="./img/facebook.png" style="height: 40px; left: 1px;" class="fixed-bottom" alt="facebook">
+    <img src="./img/google.png" style="height: 40px; left: 42px;" class="fixed-bottom" alt="google">
+    <footer class="fixed-bottom text-center text-white">Copyright &copy; 2024 FIBEX All Rights Reserved
+    </footer>
+
+    <!-- src -->
+
+    <script src="./jquery/jquery.js"></script>
+    <script src="./jquery/jquery-ui.min.js"></script>
+    <script src="./bootstrap/bootstrap.js"></script>
+    <script src="./randomBgc.js"></script>
+
+    <script>
+
+        function reGenerate() {
+            let randomNum = Math.floor(Math.random() * 8999 + 1000);
+            $("#captcha").text(randomNum);
+        }
+        reGenerate();
+
+        function formSubmit() {
+            if ($("#verification").val() == $("#captcha").text()) {
+                $("form").submit();
+            } else {
+                alert("驗證碼錯誤，請重新輸入");
+                location.href = "tickets.html";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
